@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tari Kecak Bali</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- AUDIO AUTOPLAY -->
+    <audio id="kecakAudio" src="audio/kecak.mp3" loop></audio>
+    <button id="audioBtn">► Aktifkan Suara</button>
+
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="particles"></canvas>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <img src="img/hero.jpg" id="heroImg" alt="Tari Kecak Bali">
+        <div class="hero-text reveal">
+            <h1 class="glitch" data-text="TARI KECAK BALI">TARI KECAK BALI</h1>
+            <p>Seni ikonik Bali yang mengguncang dunia.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section id="materi" class="content">
+
+        <h2 class="reveal">Apa Itu Tari Kecak?</h2>
+        <p class="reveal">
+            Tari kecak adalah pertunjukan bali yang memadukan suara “cak-cak-cak” dari puluhan penari pria 
+            yang duduk melingkar tanpa alat musik. Suara manusia menjadi instrumen utamanya.
+        </p>
+
+        <img src="img/kecak1.jpg" class="image reveal">
+
+        <h2 class="reveal">Asal Usul</h2>
+        <p class="reveal">
+            Berawal dari ritual kuno “Sanghyang”, di mana penari dipercaya kerasukan roh suci.
+            Lalu pada tahun 1930-an dikombinasikan dengan kisah Ramayana hingga menjadi pertunjukan modern.
+        </p>
+
+        <img src="img/kecak2.jpg" class="image reveal">
+
+        <h2 class="reveal">Keunikan & Ciri Khas</h2>
+        <p class="reveal">
+            • Tanpa gamelan  
+            • Sinkronisasi suara manusia  
+            • Penari mencapai 100 orang  
+            • Efek hipnotis dari ritme “cak-cak-cak”  
+        </p>
+
+        <h2 class="reveal">Makna Filosofis</h2>
+        <p class="reveal">
+            Simbol kemenangan dharma melawan adharma, memperlihatkan harmoni manusia-alam 
+            serta kekuatan kebersamaan masyarakat Bali.
+        </p>
+
+        <img src="img/kecak3.jpg" class="image reveal">
+
+        <h2 class="reveal">Lokasi Menonton Terbaik</h2>
+
+        <div class="lokasi reveal">
+            <button class="mapBtn" data-map="uluwatu">Uluwatu</button>
+            <button class="mapBtn" data-map="gwk">GWK</button>
+            <button class="mapBtn" data-map="batu">Desa Batu Bulan</button>
+        </div>
+
+        <div id="mapFrame" class="reveal"></div>
+
+    </section>
+
+</body>
+</html>
