@@ -3,76 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tari Kecak Bali</title>
-
+    <title>Kecak Bali – Budaya Lokal Indonesia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
-
 <body>
 
-    <!-- AUDIO AUTOPLAY -->
-    <audio id="kecakAudio" src="audio/kecak.mp3" loop></audio>
-    <button id="audioBtn">► Aktifkan Suara</button>
+<!-- Particle -->
+<canvas id="particles"></canvas>
 
-    <!-- PARTICLE BACKGROUND -->
-    <canvas id="particles"></canvas>
+<!-- NAV -->
+<nav>
+    <h1>Kecak Bali</h1>
+    <button id="audioBtn">Putar Audio</button>
+</nav>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-        <img src="img/hero.jpg" id="heroImg" alt="Tari Kecak Bali">
-        <div class="hero-text reveal">
-            <h1 class="glitch" data-text="TARI KECAK BALI">TARI KECAK BALI</h1>
-            <p>Seni ikonik Bali yang mengguncang dunia.</p>
-        </div>
-    </section>
+<!-- HERO -->
+<header class="hero">
+    <img src="img/hero.jpg" id="heroImg" alt="Kecak Bali">
+    <div class="hero-text">
+        <h2 class="reveal">Tari Kecak</h2>
+        <p class="reveal">Seni, Ritual, dan Budaya Sakral Bali</p>
+    </div>
+</header>
 
-    <!-- MAIN CONTENT -->
-    <section id="materi" class="content">
+<!-- MATERI -->
+<section id="materi" class="container">
+    <h2 class="reveal">Materi Lengkap Kecak Bali</h2>
 
-        <h2 class="reveal">Apa Itu Tari Kecak?</h2>
-        <p class="reveal">
-            Tari kecak adalah pertunjukan bali yang memadukan suara “cak-cak-cak” dari puluhan penari pria 
-            yang duduk melingkar tanpa alat musik. Suara manusia menjadi instrumen utamanya.
-        </p>
+    <div class="card reveal">
+        <img src="img/kecak1.jpg" alt="">
+        <h3>Apa itu Tari Kecak?</h3>
+        <p>Tari Kecak adalah tarian tradisional Bali yang unik karena tidak menggunakan alat musik—melainkan suara puluhan penari laki-laki yang berteriak “cak cak cak” secara ritmis.</p>
+    </div>
 
-        <img src="img/kecak1.jpg" class="image reveal">
+    <div class="card reveal">
+        <img src="img/kecak2.jpg" alt="">
+        <h3>Fungsi dan Peran</h3>
+        <p>Tari Kecak tidak hanya pertunjukan seni, tetapi juga sarana ritual, simbol spiritualitas, serta bentuk ekspresi budaya masyarakat Bali.</p>
+    </div>
 
-        <h2 class="reveal">Asal Usul</h2>
-        <p class="reveal">
-            Berawal dari ritual kuno “Sanghyang”, di mana penari dipercaya kerasukan roh suci.
-            Lalu pada tahun 1930-an dikombinasikan dengan kisah Ramayana hingga menjadi pertunjukan modern.
-        </p>
+    <div class="card reveal">
+        <img src="img/kecak3.jpg" alt="">
+        <h3>Kecak Modern</h3>
+        <p>Seiring berkembangnya zaman, Tari Kecak juga dikemas dalam format wisata budaya yang lebih atraktif, namun tetap mempertahankan elemen sakralnya.</p>
+    </div>
 
-        <img src="img/kecak2.jpg" class="image reveal">
+</section>
 
-        <h2 class="reveal">Keunikan & Ciri Khas</h2>
-        <p class="reveal">
-            • Tanpa gamelan  
-            • Sinkronisasi suara manusia  
-            • Penari mencapai 100 orang  
-            • Efek hipnotis dari ritme “cak-cak-cak”  
-        </p>
+<!-- MAP SECTION -->
+<section id="lokasi" class="container">
+    <h2 class="reveal">Lokasi Pertunjukan Populer</h2>
 
-        <h2 class="reveal">Makna Filosofis</h2>
-        <p class="reveal">
-            Simbol kemenangan dharma melawan adharma, memperlihatkan harmoni manusia-alam 
-            serta kekuatan kebersamaan masyarakat Bali.
-        </p>
+    <div class="map-buttons">
+        <button class="mapBtn" data-map="uluwatu">Kecak Uluwatu</button>
+        <button class="mapBtn" data-map="gwk">GWK Cultural Park</button>
+        <button class="mapBtn" data-map="batu">Batu Bulan</button>
+    </div>
 
-        <img src="img/kecak3.jpg" class="image reveal">
+    <div id="mapFrame" class="mapFrame reveal">
+        <p>Pilih lokasi untuk melihat peta.</p>
+    </div>
+</section>
 
-        <h2 class="reveal">Lokasi Menonton Terbaik</h2>
+<!-- AUDIO -->
+<audio id="kecakAudio" src="audio/kecak.mp3" loop></audio>
 
-        <div class="lokasi reveal">
-            <button class="mapBtn" data-map="uluwatu">Uluwatu</button>
-            <button class="mapBtn" data-map="gwk">GWK</button>
-            <button class="mapBtn" data-map="batu">Desa Batu Bulan</button>
-        </div>
-
-        <div id="mapFrame" class="reveal"></div>
-
-    </section>
-
+<script src="script.js"></script>
 </body>
 </html>
